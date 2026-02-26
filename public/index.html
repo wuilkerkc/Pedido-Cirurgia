@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedido de Cirurgia - Sistema de Gerenciamento</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .container {
+            background: white;
+            padding: 3rem;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 800px;
+            width: 90%;
+        }
+        h1 {
+            color: #667eea;
+            margin-bottom: 1rem;
+            font-size: 2.5rem;
+            text-align: center;
+        }
+        .badge {
+            display: inline-block;
+            background: #10b981;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            margin: 1rem 0;
+        }
+        .info {
+            background: #f3f4f6;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+        }
+        .info h3 {
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        .info p {
+            color: #6b7280;
+            line-height: 1.6;
+        }
+        .deployment-info {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1rem;
+            margin: 1.5rem 0;
+        }
+        .info-card {
+            background: #e5e7eb;
+            padding: 1rem;
+            border-radius: 8px;
+        }
+        .info-card strong {
+            display: block;
+            color: #374151;
+            margin-bottom: 0.5rem;
+        }
+        footer {
+            text-align: center;
+            color: #9ca3af;
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid #e5e7eb;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>🏬 Pedido de Cirurgia</h1>
+        <div style="text-align: center;">
+            <span class="badge">✅ Deploy Bem-sucedido!</span>
+        </div>
+        
+        <div class="info">
+            <h3>🚀 Sistema de Gerenciamento de Pedidos Cirúrgicos</h3>
+            <p>
+                Sistema completo para gerenciamento de pedidos cirúrgicos desenvolvido em PHP 8.2.
+                Integração com EMR CodeHealth para otimização de processos clínicos e administrativos.
+            </p>
+        </div>
+
+        <div class="deployment-info">
+            <div class="info-card">
+                <strong>💻 Ambiente</strong>
+                <span>Testing</span>
+            </div>
+            <div class="info-card">
+                <strong>🔧 Versão</strong>
+                <span>1.0.0</span>
+            </div>
+            <div class="info-card">
+                <strong>🕹️ Framework</strong>
+                <span>PHP 8.2</span>
+            </div>
+            <div class="info-card">
+                <strong>⏱️ Status</strong>
+                <span style="color: #10b981;">✅ Online</span>
+            </div>
+        </div>
+
+        <div class="info">
+            <h3>✅ Componentes Instalados</h3>
+            <p>
+                • PHP 8.2 com extensões: mbstring, pdo, json, xml, bcmath<br>
+                • Composer para gerenciamento de dependências<br>
+                • PHPUnit para testes automatizados<br>
+                • PSR-4 Autoloading configurado<br>
+                • GitHub Actions CI/CD Pipeline ativo
+            </p>
+        </div>
+
+        <footer>
+            <p>Desenvolvido por wuilkerkc | Deploy via GitHub Actions</p>
+            <p id="deploy-time"></p>
+        </footer>
+    </div>
+    <script>
+        document.getElementById('deploy-time').textContent = 
+            'Deploy realizado em: ' + new Date().toLocaleString('pt-BR');
+    </script>
+</body>
+</html>
